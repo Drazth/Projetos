@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(45deg, black, cyan, yellow, black);
+}
+
+.login-container {
+    background-image: linear-gradient(0deg, black, cyan, black);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-image: linear-gradient(45deg, black, cyan);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-image: linear-gradient(45deg, black, cyan, black);
+}
+
+.loading {
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+
+#error-message {
+    font-family: Verdana, Tahoma, sans-serif;
+    padding: 10px;
+    color: rgb(255, 3, 3);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.load{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.load div{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 4px;
+    opacity: 0.2;
+    animation: anima 1s ease-in-out infinite alternate;
+}
+
+.load div:nth-child(1) {
+    animation-delay: -0.4s;
+}
+
+.load div:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+@keyframes anima{
+    from{
+        opacity: 0.2;
+        transform: translateY(-9px);
+    }
+
+    to{
+        opacity: 0.6;
+        transform: translateY(9px);
+    }
+}
