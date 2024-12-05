@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Nomes</title>
+    <script>
+        function coletarNomes() {
+            const quantidade = parseInt(prompt("Informe a quantidade de nomes a inserir:"));
+            const nomes = [];
+
+            for (let i = 0; i < quantidade; i++) {
+                const nome = prompt(`Digite o nome ${i + 1}:`);
+                nomes.push(nome);
+            }
+
+            const nomesAlfabeticos = [...nomes].sort();
+            const nomesMaiusculos = nomes.map(nome => nome.toUpperCase());
+
+            alert(`Quantidade de nomes digitados: ${nomes.length}\n` +
+                  `Nomes na ordem em que foram digitados: ${nomes.join(", ")}\n` +
+                  `Nomes na ordem alfabetica: ${nomesAlfabeticos.join(", ")}\n` +
+                  `Nomes em maiusculo: ${nomesMaiusculos.join(", ")}`);
+        }
+    </script>
+</head>
+<body>
+    <h1>4- Usando Java Script, solicite que seja informado a quantidade de nomes para inserir em uma lista. Solicite os nomes conforme a quantidade informada (apenas o primeiro nome) em uma caixa prompt acumulando em um Array e no final, mostre</h1>
+    <button onclick="coletarNomes()">Clique aqui para inserir nomes</button>
+</body>
+</html>

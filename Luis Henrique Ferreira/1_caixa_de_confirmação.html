@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa de Confirmação</title>
+    <script>
+        function mostrarConfirmacao() {
+            const confirmacao = confirm("Você deseja continuar?");
+            if (confirmacao) {
+                alert("Parabéns programador");
+            } else {
+                alert("Você cancelou a ação.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>1- De um exemplo de caixa de confirmação.</h1>
+    <button onclick="mostrarConfirmacao()">Clique aqui</button>
+</body>
+</html>

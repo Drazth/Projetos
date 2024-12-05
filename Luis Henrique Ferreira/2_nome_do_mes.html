@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomes dos Meses</title>
+    <script>
+        function mostrarMes() {
+            const meses = [
+                "Janeiro", "Fevereiro", "Março", "Abril", 
+                "Maio", "Junho", "Julho", "Agosto", 
+                "Setembro", "Outubro", "Novembro", "Dezembro"
+            ];
+            const numero = prompt("Digite o numero do mes (1-12):");
+            const indice = parseInt(numero) - 1;
+
+            if (indice >= 0 && indice < meses.length) {
+                alert("Mês: " + meses[indice]);
+            } else {
+                alert("numero invalido Por favor, digite um numero entre 1 e 12.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>2- Faça um script que solicite o numero do mes em um prompt e mostre o nome do mes por extenso.</h1>
+    <button onclick="mostrarMes()">Clique aqui para inserir o mes</button>
+</body>
+</html>
