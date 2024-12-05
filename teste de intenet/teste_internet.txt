@@ -1,0 +1,10 @@
+para rodar o codigo, abra o prompt de comando
+navegue até a pasta que esta o arquivo executavel, exemplo:
+
+cd c:/Users/luis.ferreira/Desktop/Power/Projetos/teste de internet/
+
+após isso inicie o streamlit:
+
+streamlit run teste_internet.py 
+
+feito isso, ele abrira o executavel diretamente no navegador.
